@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Ng2ImgFallbackAppComponent {
   title = 'ng2-img-fallback works!';
+
+  placeholder = 'http://placehold.it/200x200';
+
+  public onError(): void {
+
+  }
 }
