@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Ng2ImgFallback } from 'ng2-img-fallback';
 
-
 @Component({
   selector: 'example-app',
   templateUrl: 'app.component.html',
