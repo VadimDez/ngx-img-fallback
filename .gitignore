@@ -3,19 +3,20 @@
 
 # dependencies
 /node_modules
-/bower_components
+/example/node_modules
 
 # IDEs and editors
 /.idea
 
 # misc
-/.sass-cache
 /connect.lock
 /coverage/*
 /libpeerconnection.log
 npm-debug.log
+/example/npm-debug.log
 testem.log
 /typings
+/example/typings
 
 # e2e
 /e2e/*.js

@@ -12,12 +12,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var Ng2ImgFallback = (function () {
     function Ng2ImgFallback(el) {
+        this.isApplied = false;
+        this.EVENT_TYPE = 'error';
         this.el = el.nativeElement;
-        this.listener = this.el.addEventListener('error', this.onError.bind(this));
+        this.el.addEventListener(this.EVENT_TYPE, this.onError.bind(this));
     }
     Ng2ImgFallback.prototype.onError = function () {
-        this.el.removeEventListener('error', this.listener);
-        this.el.setAttribute('src', this.imgSrc);
+        this.removeEvents();
+        if (!this.isApplied) {
+            this.isApplied = true;
+            this.el.setAttribute('src', this.imgSrc);
+        }
+    };
+    Ng2ImgFallback.prototype.removeEvents = function () {
+        this.el.removeEventListener(this.EVENT_TYPE, this.onError);
+    };
+    Ng2ImgFallback.prototype.ngOnDestroy = function () {
+        this.removeEvents();
     };
     __decorate([
         core_1.Input('ng2-img-fallback'), 
