@@ -2,7 +2,9 @@
 
 > Load placeholder image on image error
 
-Angular 2 directive that loads placeholder image on primary image error
+Angular 2 directive that loads placeholder image on primary image error.
+
+[Demo page](http://vadimdez.github.io/ng2-img-fallback/)
 
 ### Install
 
