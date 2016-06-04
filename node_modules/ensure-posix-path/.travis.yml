@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+node_js:
+  - "0.10"
+  - "0.12"
+  - "iojs"
+  - "4.2"
+  - "5"
+
+os:
+  - linux
+script: npm test
+before_install:
+  - npm config set spin false
+install:
+  - node --version
+  - npm --version
+  - git --version
+  - npm install --no-optional

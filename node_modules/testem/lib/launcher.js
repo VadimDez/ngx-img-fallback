@@ -1,0 +1,147 @@
+'use strict';
+
+var log = require('npmlog');
+var rimraf = require('rimraf');
+var mkdirp = require('mkdirp');
+var path = require('path');
+
+var template = require('./strutils').template;
+var ProcessCtl = require('./process-ctl');
+
+function Launcher(name, settings, config) {
+  this.name = name;
+  this.config = config;
+  this.settings = settings;
+  this.setupDefaultSettings();
+  this.id = settings.id || String(Math.floor(Math.random() * 10000));
+
+  this.processCtl = new ProcessCtl(name);
+}
+
+Launcher.prototype = {
+  setupDefaultSettings: function() {
+    var settings = this.settings;
+    if (settings.protocol === 'tap' && !('hide_stdout' in settings)) {
+      settings.hide_stdout = true;
+    }
+  },
+  isProcess: function() {
+    return this.settings.protocol !== 'browser';
+  },
+  protocol: function() {
+    return this.settings.protocol || 'process';
+  },
+  commandLine: function() {
+    if (this.settings.command) {
+      return '"' + this.settings.command + '"';
+    } else if (this.settings.exe) {
+      return '"' + this.settings.exe +
+        ' ' + this.getArgs().join(' ') + '"';
+    }
+  },
+  start: function() {
+    this.launch();
+  },
+  launch: function(cb) {
+    var self = this;
+    var settings = this.settings;
+    var dir = this.browserTmpDir(this.config, this.id);
+
+    rimraf(dir, function(err) {
+      if (err) {
+        return cb(err);
+      }
+
+      mkdirp(dir, function(err) {
+        if (err) {
+          return cb(err);
+        }
+
+        if (settings.setup) {
+          settings.setup.call(self, self.config, function(err) {
+            if (err) {
+              return cb(err);
+            }
+
+            self.doLaunch(cb);
+          });
+        } else {
+          self.doLaunch(cb);
+        }
+      });
+    });
+  },
+  on: function(eventName, fn) {
+    this.processCtl.on(eventName, fn);
+  },
+  once: function(eventName, fn) {
+    this.processCtl.once(eventName, fn);
+  },
+  removeListener: function(eventName, fn) {
+    this.processCtl.removeListener(eventName, fn);
+  },
+  doLaunch: function(cb) {
+    var settings = this.settings;
+    var self = this;
+    var options = {};
+
+    if (settings.cwd) {
+      options.cwd = settings.cwd;
+    }
+
+    if (settings.exe) {
+      var args = self.getArgs();
+      args = self.template(args);
+
+      this.processCtl.spawn(settings.exe, args, options).asCallback(cb);
+    } else if (settings.command) {
+      var cmd = this.template(settings.command);
+      log.info('cmd: ' + cmd);
+
+      this.processCtl.exec(cmd, options).asCallback(cb);
+    }
+  },
+  getUrl: function() {
+    var baseUrl = this.config.get('url');
+    var testPage = this.settings.test_page;
+    var id = this.id;
+
+    if (this.isProcess()) {
+      id = -1;
+    }
+
+    return baseUrl + id + (testPage ? '/' + testPage : '');
+  },
+  getArgs: function() {
+    var settings = this.settings;
+    var url = this.getUrl();
+    var args = [url];
+    if (settings.args instanceof Array) {
+      args = settings.args.concat(args);
+    } else if (settings.args instanceof Function) {
+      args = settings.args.call(this, this.config, url);
+    }
+    return args;
+  },
+  template: function(thing) {
+    if (Array.isArray(thing)) {
+      return thing.map(this.template, this);
+    } else {
+      var params = {
+        url: this.getUrl(),
+        port: this.config.get('port')
+      };
+      return template(thing, params);
+    }
+  },
+  kill: function(sig, cb) {
+    this.processCtl.kill(sig).asCallback(cb);
+  },
+  browserTmpDir: function() {
+    var userDataDir = this.config.getUserDataDir();
+
+    return path.join(userDataDir, 'testem-' + this.id);
+  }
+};
+
+module.exports = Launcher;
