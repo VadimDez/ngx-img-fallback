@@ -1,3 +1,4 @@
 export declare class AppComponent {
-    placeholder: string;
+    brokenPlaceholder: string;
+    workingPlaceholder: string;
 }

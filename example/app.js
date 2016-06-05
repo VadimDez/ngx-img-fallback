@@ -23,7 +23,8 @@ System.register(['@angular/core', 'ng2-img-fallback'], function(exports_1, conte
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.placeholder = 'http://placeholder.it/200x200';
+                    this.brokenPlaceholder = 'broken_placeholder';
+                    this.workingPlaceholder = 'https://placehold.it/100x100';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
