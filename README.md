@@ -19,10 +19,10 @@ In your ```system.config.js```
 Add to ```map```
 
 ```js
-    var map = {
-        ...
-        'ng2-img-fallback': 'node_modules/ng2-img-fallback'
-    }
+var map = {
+    ...
+    'ng2-img-fallback': 'node_modules/ng2-img-fallback'
+}
 ```
 
 and then to ```packages```
