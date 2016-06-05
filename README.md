@@ -58,7 +58,7 @@ Use directive in html
 <img src="some_img.png" ng2-img-fallback="{{ placeholder }}" >
 ```
 
-See also example
+See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
 ### License
 
