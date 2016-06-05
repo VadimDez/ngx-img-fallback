@@ -1,0 +1,15 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,7 +1,19 @@
-<div>
-    <img src="not-working_image" alt="not working image">
-</div>
-<div>
-    <img src="not-working_image" alt="not working image" ng2-img-fallback="{{ placeholder }}">
-    <img src="not-working_image" alt="not working image" ng2-img-fallback="http://placehold.it/100x100">
-</div>
+<section>
+    <h1><a href="https://github.com/vadimdez/ng2-img-fallback">ng2-img-fallback</a> in action</h1>
+    <div>
+        <h3>Broken image</h3>
+        <img src="not-working_image" alt="not working image">
+    </div>
+    <div>
+        <h3>Broken image with broken fallback</h3>
+        <img src="not-working_image" alt="not working image with not working fallback" ng2-img-fallback="{{ brokenPlaceholder }}">
+    </div>
+    <div>
+        <h3>Broken image with working fallback</h3>
+        <img src="not-working_image" alt="not working image with wirking fallback" ng2-img-fallback="{{ workingPlaceholder }}">
+    </div>
+</section>
+
+<footer>
+    <a href="https://github.com/vadimdez">Vadym Yatsyuk</a>
+</footer>

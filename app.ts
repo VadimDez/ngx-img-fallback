@@ -7,5 +7,6 @@ import { Ng2ImgFallback } from 'ng2-img-fallback';
   directives: [Ng2ImgFallback]
 })
 export class AppComponent {
-  placeholder = 'http://placeholder.it/200x200';
+  brokenPlaceholder = 'broken_placeholder';
+  workingPlaceholder = 'https://placehold.it/100x100';
 }
