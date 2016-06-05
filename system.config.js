@@ -2,7 +2,7 @@
 
   // map tells the System loader where to look for things
   var map = {
-    'app': '.',
+    'app': './',
     'rxjs': 'node_modules/rxjs',
     '@angular': 'node_modules/@angular',
     'ng2-img-fallback': 'node_modules/ng2-img-fallback'
