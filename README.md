@@ -4,7 +4,7 @@
 
 Angular 2 directive that loads placeholder image on primary image error.
 
-[Demo page](http://vadimdez.github.io/ng2-img-fallback/)
+[Demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
 ### Install
 
@@ -13,6 +13,26 @@ npm install  ng2-img-fallback --save
 ```
 
 ### Usage
+
+In your ```system.config.js```
+
+Add to ```map```
+
+```js
+    var map = {
+        ...
+        'ng2-img-fallback': 'node_modules/ng2-img-fallback'
+    }
+```
+
+and then to ```packages```
+
+```js
+var packages = {
+    ...
+    'ng2-img-fallback': { main: 'dist/index.js' }
+}
+```
 
 Import directive to your component
 
