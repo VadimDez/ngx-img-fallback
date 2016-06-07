@@ -62,7 +62,7 @@ export class AppComponent {
 Use directive in html
 
 ```html
-<img src="some_img.png" ng2-img-fallback="{{ placeholder }}" >
+<img src="some_img.png" src-fallback="{{ placeholder }}" >
 ```
 
 See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
