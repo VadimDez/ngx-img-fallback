@@ -14,7 +14,7 @@ import { Ng2ImgFallback } from './ng2-img-fallback.directive';
 
 @Component({
   selector: 'test-component',
-  template: `<div ng2-img-fallback></div>`
+  template: `<div src-fallback></div>`
 })
 class TestComponent {}
 

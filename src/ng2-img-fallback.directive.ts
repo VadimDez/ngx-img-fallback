@@ -2,11 +2,11 @@
 import { Directive, ElementRef, Input } from '@angular/core';
 
 @Directive({
-  selector: '[ng2-img-fallback]'
+  selector: '[src-fallback]'
 })
 export class Ng2ImgFallback {
 
-  @Input('ng2-img-fallback') imgSrc: string;
+  @Input('src-fallback') imgSrc: string;
   private el:HTMLElement;
   private isApplied: boolean = false;
   private EVENT_TYPE = 'error';

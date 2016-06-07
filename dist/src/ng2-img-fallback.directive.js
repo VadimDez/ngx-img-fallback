@@ -31,12 +31,12 @@ var Ng2ImgFallback = (function () {
         this.removeEvents();
     };
     __decorate([
-        core_1.Input('ng2-img-fallback'), 
+        core_1.Input('src-fallback'), 
         __metadata('design:type', String)
     ], Ng2ImgFallback.prototype, "imgSrc", void 0);
     Ng2ImgFallback = __decorate([
         core_1.Directive({
-            selector: '[ng2-img-fallback]'
+            selector: '[src-fallback]'
         }), 
         __metadata('design:paramtypes', [core_1.ElementRef])
     ], Ng2ImgFallback);
