@@ -1,0 +1,24 @@
+{
+  "name": "ng2-img-fallback",
+  "description": "Angular2 directive for image fallback",
+  "main": "dist/index.js",
+  "authors": [
+    "Vadym Yatsyuk <vadym.yatsyuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular2",
+    "img",
+    "image",
+    "fallback"
+  ],
+  "homepage": "https://github.com/VadimDez/ng2-img-fallback",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
