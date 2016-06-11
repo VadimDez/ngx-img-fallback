@@ -17,7 +17,29 @@
 </head>
 
 <body>
-<example-app>Loading...</example-app>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">ng2-img-fallback</span>
+        </div>
+    </header>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <example-app>Loading...</example-app>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">ng2-img-fallback</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</div>
 <script>
     System.import('app').then(null, function (err) {
         console.log(err)
