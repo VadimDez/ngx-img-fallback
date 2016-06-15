@@ -1,21 +1,5 @@
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
-}
-
-header {
-    background-color: #e3e3e3;
-    padding-bottom: 10px;
-}
-
 header h1, section {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-footer {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 12px;
 }
