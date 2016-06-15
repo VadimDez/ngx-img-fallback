@@ -37,6 +37,7 @@
     "karma-jasmine": "^0.3.8",
     "lite-server": "^2.2.0",
     "protractor": "^3.3.0",
+    "systemjs-builder": "^0.15.23",
     "ts-node": "^0.5.5",
     "tslint": "^3.6.0",
     "typescript": "^1.8.10",
