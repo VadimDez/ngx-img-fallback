@@ -1,11 +1,11 @@
-(function (global) {
+// (function (global) {
 
   // map tells the System loader where to look for things
   var map = {
     'app': './',
-    'rxjs': 'node_modules/rxjs',
-    '@angular': 'node_modules/@angular',
-    'ng2-img-fallback': 'node_modules/ng2-img-fallback'
+    'rxjs': './node_modules/rxjs',
+    '@angular': './node_modules/@angular',
+    'ng2-img-fallback': './node_modules/ng2-img-fallback'
   };
 
   // packages tells the System loader how to load when no filename and/or no extension
@@ -23,9 +23,8 @@
     '@angular/platform-browser-dynamic'
   ];
 
-  // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
   packageNames.forEach(function (pkgName) {
-    packages[pkgName] = {main: 'index.js', defaultExtension: 'js'};
+    packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
   });
 
   var config = {
@@ -34,10 +33,10 @@
   };
 
   // filterSystemConfig - index.html's chance to modify config before we register it.
-  if (global.filterSystemConfig) {
-    global.filterSystemConfig(config);
-  }
+  // if (this.filterSystemConfig) {
+  //   this.filterSystemConfig(config);
+  // }
 
   System.config(config);
 
-})(this);
+// })(this);
