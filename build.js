@@ -4,14 +4,10 @@
 var path = require("path");
 var Builder = require('systemjs-builder');
 
-// optional constructor options
-// sets the baseURL and loads the configuration file
-var builder = new Builder('/');
-
-builder.loadConfig('./system.config.js');
+var builder = new Builder('./', './system.config.js');
 
 builder
-  .bundle('main.js', 'outfile.js')
+  .buildStatic('./app.js', './dist/build.js')
   .then(function() {
     console.log('Build complete');
   })
