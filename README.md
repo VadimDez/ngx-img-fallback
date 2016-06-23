@@ -69,4 +69,4 @@ See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/exam
 
 ### License
 
-MIT © [Vadym Yatsyuk](https://github.com/vadimdez)
+[MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
