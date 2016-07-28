@@ -1,4 +1,4 @@
-# Angular2 Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)
+# Angular2 Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback) [![Bower version](https://badge.fury.io/bo/ng2-img-fallback.svg)](https://badge.fury.io/bo/ng2-img-fallback)
 
 > Load placeholder image on image error
 
@@ -69,4 +69,4 @@ See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/exam
 
 ### License
 
-MIT © [Vadym Yatsyuk](https://github.com/vadimdez)
+[MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
