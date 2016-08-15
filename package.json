@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Angular2 directive for image fallback",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "directories": {
     "example": "example"
   },
