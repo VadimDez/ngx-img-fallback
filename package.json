@@ -1,6 +1,6 @@
 {
   "name": "ng2-img-fallback",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Angular2 directive for image fallback",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
