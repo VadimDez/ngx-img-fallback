@@ -1,14 +1,9 @@
 import {
   async,
-  beforeEachProviders,
-  describe,
-  ddescribe,
-  expect,
-  iit,
-  it,
+  addProviders,
   inject
 } from '@angular/core/testing';
-import {ComponentFixture, TestComponentBuilder} from '@angular/compiler/testing';
+import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { provide, Component } from '@angular/core';
 import { Ng2ImgFallback } from './ng2-img-fallback.directive';
 
@@ -19,7 +14,7 @@ import { Ng2ImgFallback } from './ng2-img-fallback.directive';
 class TestComponent {}
 
 describe('Ng2ImgFallback Directive', () => {
-  beforeEachProviders((): any[] => []);
+  beforeEach(() => addProviders([]));
 
   it('should ...', async(inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
     return tcb.createAsync(TestComponent).then((fixture: ComponentFixture<any>) => {

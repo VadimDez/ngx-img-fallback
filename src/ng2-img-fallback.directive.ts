@@ -7,9 +7,9 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class Ng2ImgFallback {
 
   @Input('src-fallback') imgSrc: string;
-  private el:HTMLElement;
+  private el: HTMLElement;
   private isApplied: boolean = false;
-  private EVENT_TYPE = 'error';
+  private EVENT_TYPE: string = 'error';
 
   constructor(el: ElementRef) {
     this.el = el.nativeElement;
