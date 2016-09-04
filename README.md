@@ -21,7 +21,7 @@ bower install ng2-img-fallback --save
 
 ### Usage
 
-In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ng2-img-fallback/edit/master/SYSTEMJS.md)
+In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ng2-img-fallback/blob/master/SYSTEMJS.md)
 
 
 Add directive to your module's ```declarations```
