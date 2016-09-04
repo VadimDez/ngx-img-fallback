@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', './app'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', './app', 'ng2-img-fallback'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', './app'], functio
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, app_1;
+    var core_1, platform_browser_1, app_1, ng2_img_fallback_1;
     var AppModule;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['@angular/core', '@angular/platform-browser', './app'], functio
             },
             function (app_1_1) {
                 app_1 = app_1_1;
+            },
+            function (ng2_img_fallback_1_1) {
+                ng2_img_fallback_1 = ng2_img_fallback_1_1;
             }],
         execute: function() {
             AppModule = (function () {
@@ -30,7 +33,7 @@ System.register(['@angular/core', '@angular/platform-browser', './app'], functio
                 AppModule = __decorate([
                     core_1.NgModule({
                         imports: [platform_browser_1.BrowserModule],
-                        declarations: [app_1.AppComponent],
+                        declarations: [app_1.AppComponent, ng2_img_fallback_1.Ng2ImgFallback],
                         bootstrap: [app_1.AppComponent]
                     }), 
                     __metadata('design:paramtypes', [])

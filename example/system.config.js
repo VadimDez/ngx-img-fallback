@@ -15,17 +15,14 @@
     'ng2-img-fallback': { main: 'dist/index.js' }
   };
 
-  var packageNames = [
-    '@angular/common',
-    '@angular/compiler',
-    '@angular/core',
-    '@angular/platform-browser',
-    '@angular/platform-browser-dynamic'
-  ];
-
-  // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
-  packageNames.forEach(function (pkgName) {
-    packages[pkgName] = {main: 'index.js', defaultExtension: 'js'};
+  [
+    'common',
+    'compiler',
+    'core',
+    'platform-browser',
+    'platform-browser-dynamic'
+  ].forEach(function (pkgName) {
+    packages['@angular/' + pkgName] = { main: 'bundles/' + pkgName + '.umd.min.js', defaultExtension: 'js' };
   });
 
   var config = {
