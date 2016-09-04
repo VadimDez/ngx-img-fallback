@@ -21,48 +21,40 @@ bower install ng2-img-fallback --save
 
 ### Usage
 
-In your ```system.config.js```
+In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ng2-img-fallback/blob/master/SYSTEMJS.md)
 
-Add to ```map```
+
+Add directive to your module's ```declarations```
 
 ```js
-var map = {
-    ...
-    'ng2-img-fallback': 'node_modules/ng2-img-fallback'
-}
+import { NgModule } from '@angular/core';
+import { BrowserModule  } from '@angular/platform-browser';
+import { AppComponent } from './app';
+
+import { Ng2ImgFallback } from 'ng2-img-fallback';
+
+@NgModule({
+  imports: [BrowserModule],
+  declarations: [AppComponent, Ng2ImgFallback],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
-and then to ```packages```
+Use it in you component
 
 ```js
-var packages = {
-    ...
-    'ng2-img-fallback': { main: 'dist/index.js' }
-}
-```
-
-Import directive to your component
-
-```js
-
 import { Component } from '@angular/core';
 import { Ng2ImgFallback } from 'ng2-img-fallback';
 
 @Component({
   selector: 'example-app',
-  templateUrl: 'app.component.html',
-  directives: [Ng2ImgFallback]
+  template: '<img src="some_img.png" src-fallback="{{ placeholder }}" >'
 })
 export class AppComponent {
   placeholder = 'http://placehold.it/200x200';
 }
 
-```
-
-Use directive in html
-
-```html
-<img src="some_img.png" src-fallback="{{ placeholder }}" >
 ```
 
 See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
