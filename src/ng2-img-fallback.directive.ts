@@ -1,4 +1,3 @@
-///<reference path="../typings/main.d.ts"/>
 import { Directive, ElementRef, Input } from '@angular/core';
 
 @Directive({
