@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+* [[#8](https://github.com/VadimDez/ng2-img-fallback/issues/8)] - Fixed typings (Can't find main.d.ts file)
+
 ## 0.1.3
 
 * [[#6](https://github.com/VadimDez/ng2-img-fallback/issues/6)] - Update to Angular RC6
