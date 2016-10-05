@@ -9,7 +9,19 @@
     "sourceMap": true,
     "moduleResolution": "node",
     "rootDir": ".",
-    "outDir": "./dist/"
+    "outDir": "./dist/",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules"
+    ],
+    "types": [
+      "core-js",
+      "jasmine",
+      "selenium-webdriver",
+      "node",
+      "protractor",
+      "systemjs"
+    ]
   },
   "files": [
     "index.ts"
