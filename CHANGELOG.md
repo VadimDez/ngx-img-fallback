@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.0
+
+* [[#10](https://github.com/VadimDez/ng2-img-fallback/issues/10)] - Error Ionic2 run android device
+
+#### Breaking changes
+Now instead of declaring `Ng2ImgFallback` you need to import it:
+```ts
+@NgModule({
+  imports: [BrowserModule, Ng2ImgFallback],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
+})
+```
+
 ## 0.1.4
 
 * [[#8](https://github.com/VadimDez/ng2-img-fallback/issues/8)] - Fixed typings (Can't find main.d.ts file)
