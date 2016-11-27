@@ -3,7 +3,7 @@ import { Directive, ElementRef, Input } from '@angular/core';
 @Directive({
   selector: '[src-fallback]'
 })
-export class Ng2ImgFallback {
+export class Ng2ImgFallbackDirective {
 
   @Input('src-fallback') imgSrc: string;
   private el: HTMLElement;

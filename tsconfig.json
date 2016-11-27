@@ -30,6 +30,11 @@
     "node_modules",
     "dist",
     "example",
-    "typings"
-  ]
+    "typings",
+    "aot"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : false
+  }
 }

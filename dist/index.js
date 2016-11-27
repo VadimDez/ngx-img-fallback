@@ -5,10 +5,10 @@ function __export(m) {
 /**
  * Created by vadimdez on 04/06/16.
  */
-var ng2_img_fallback_directive_1 = require('./src/ng2-img-fallback.directive');
-__export(require('./src/ng2-img-fallback.directive'));
+var ng2_img_fallback_module_1 = require('./src/ng2-img-fallback.module');
+__export(require('./src/ng2-img-fallback.module'));
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
-    directives: [ng2_img_fallback_directive_1.Ng2ImgFallback]
+    directives: [ng2_img_fallback_module_1.Ng2ImgFallback]
 };
 //# sourceMappingURL=index.js.map

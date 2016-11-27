@@ -1,5 +1,5 @@
 import { ElementRef } from '@angular/core';
-export declare class Ng2ImgFallback {
+export declare class Ng2ImgFallbackDirective {
     imgSrc: string;
     private el;
     private isApplied;
