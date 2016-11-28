@@ -1,2 +1,2 @@
-export declare class Ng2ImgFallback {
+export declare class Ng2ImgFallbackModule {
 }

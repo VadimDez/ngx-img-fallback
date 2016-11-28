@@ -8,20 +8,20 @@
 import * as import0 from '@angular/core/src/linker/ng_module_factory';
 import * as import1 from '../../src/ng2-img-fallback.module';
 import * as import2 from '@angular/core/src/di/injector';
-class Ng2ImgFallbackInjector extends import0.NgModuleInjector<import1.Ng2ImgFallback> {
-  _Ng2ImgFallback_0:import1.Ng2ImgFallback;
+class Ng2ImgFallbackModuleInjector extends import0.NgModuleInjector<import1.Ng2ImgFallbackModule> {
+  _Ng2ImgFallbackModule_0:import1.Ng2ImgFallbackModule;
   constructor(parent:import2.Injector) {
     super(parent,([] as any[]),([] as any[]));
   }
-  createInternal():import1.Ng2ImgFallback {
-    this._Ng2ImgFallback_0 = new import1.Ng2ImgFallback();
-    return this._Ng2ImgFallback_0;
+  createInternal():import1.Ng2ImgFallbackModule {
+    this._Ng2ImgFallbackModule_0 = new import1.Ng2ImgFallbackModule();
+    return this._Ng2ImgFallbackModule_0;
   }
   getInternal(token:any,notFoundResult:any):any {
-    if ((token === import1.Ng2ImgFallback)) { return this._Ng2ImgFallback_0; }
+    if ((token === import1.Ng2ImgFallbackModule)) { return this._Ng2ImgFallbackModule_0; }
     return notFoundResult;
   }
   destroyInternal():void {
   }
 }
-export const Ng2ImgFallbackNgFactory:import0.NgModuleFactory<import1.Ng2ImgFallback> = new import0.NgModuleFactory(Ng2ImgFallbackInjector,import1.Ng2ImgFallback);
+export const Ng2ImgFallbackModuleNgFactory:import0.NgModuleFactory<import1.Ng2ImgFallbackModule> = new import0.NgModuleFactory(Ng2ImgFallbackModuleInjector,import1.Ng2ImgFallbackModule);

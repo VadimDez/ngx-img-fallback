@@ -1,1 +1,1 @@
-{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./src/ng2-img-fallback.module"}]}
+{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./src/ng2-img-fallback.module"},{"from":"./src/ng2-img-fallback.directive"}]}

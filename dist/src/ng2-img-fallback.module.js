@@ -4,18 +4,18 @@
  */
 var core_1 = require('@angular/core');
 var ng2_img_fallback_directive_1 = require('./ng2-img-fallback.directive');
-var Ng2ImgFallback = (function () {
-    function Ng2ImgFallback() {
+var Ng2ImgFallbackModule = (function () {
+    function Ng2ImgFallbackModule() {
     }
-    Ng2ImgFallback.decorators = [
+    Ng2ImgFallbackModule.decorators = [
         { type: core_1.NgModule, args: [{
                     declarations: [ng2_img_fallback_directive_1.Ng2ImgFallbackDirective],
                     exports: [ng2_img_fallback_directive_1.Ng2ImgFallbackDirective]
                 },] },
     ];
     /** @nocollapse */
-    Ng2ImgFallback.ctorParameters = [];
-    return Ng2ImgFallback;
+    Ng2ImgFallbackModule.ctorParameters = [];
+    return Ng2ImgFallbackModule;
 }());
-exports.Ng2ImgFallback = Ng2ImgFallback;
+exports.Ng2ImgFallbackModule = Ng2ImgFallbackModule;
 //# sourceMappingURL=ng2-img-fallback.module.js.map

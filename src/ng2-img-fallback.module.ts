@@ -9,4 +9,4 @@ import { Ng2ImgFallbackDirective } from './ng2-img-fallback.directive';
   exports: [Ng2ImgFallbackDirective]
 })
 
-export class Ng2ImgFallback {}
+export class Ng2ImgFallbackModule {}

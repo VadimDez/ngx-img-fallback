@@ -24,18 +24,18 @@ bower install ng2-img-fallback --save
 In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ng2-img-fallback/blob/master/SYSTEMJS.md)
 
 
-Add directive to your module's ```declarations```
+Add module to your module's ```imports```
 
 ```js
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app';
  
-import { Ng2ImgFallback } from 'ng2-img-fallback';
+import { Ng2ImgFallbackModule } from 'ng2-img-fallback';
  
 
 @NgModule({
-  imports: [BrowserModule, Ng2ImgFallback],
+  imports: [BrowserModule, Ng2ImgFallbackModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
@@ -49,7 +49,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'example-app',
-  template: '<img src="some_img.png" src-fallback="{{ placeholder }}" >'
+  template: '<img src="some_img.png" src-fallback="{{ placeholder }}">'
 })
 export class AppComponent {
   placeholder = 'http://placehold.it/200x200';
