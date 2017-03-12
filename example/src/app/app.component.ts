@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   brokenPlaceholder = 'broken_placeholder';
   workingPlaceholder = 'https://placehold.it/100x100';
+
+  onLoad(isFallback: boolean) {
+    console.log(isFallback);
+  }
 }
