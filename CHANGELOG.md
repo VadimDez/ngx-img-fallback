@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2
+* [[#11](https://github.com/VadimDez/ng2-img-fallback/issues/11)] - Added `(loaded)` event
+
 ## 0.2.1
 * [[#10](https://github.com/VadimDez/ng2-img-fallback/issues/10)] - Error Ionic2 run android device
 
