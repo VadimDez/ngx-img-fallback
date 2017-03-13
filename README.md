@@ -52,7 +52,7 @@ export class AppComponent {
 
 See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
-### Callbacks
+### Events
 
 #### `(loaded)`
 
