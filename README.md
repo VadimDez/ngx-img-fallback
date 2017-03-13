@@ -1,4 +1,4 @@
-# Angular2 Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback) [![Bower version](https://badge.fury.io/bo/ng2-img-fallback.svg)](https://badge.fury.io/bo/ng2-img-fallback) ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
+# Angular2 Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
 
 > Load placeholder image on image error
 
@@ -8,15 +8,8 @@ Angular 2 directive that loads placeholder image on primary image error.
 
 ### Install
 
-*NPM:*
-
 ```
 npm install  ng2-img-fallback --save
-```
-or *Bower:*
-
-```
-bower install ng2-img-fallback --save
 ```
 
 ### Usage
@@ -26,7 +19,7 @@ In case you're using ```SystemJS``` see configuration [here](https://github.com/
 
 Add module to your module's ```imports```
 
-```js
+```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app';
@@ -44,7 +37,7 @@ export class AppModule {}
 
 Use it in you component
 
-```js
+```ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -58,6 +51,28 @@ export class AppComponent {
 ```
 
 See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
+
+### Callbacks
+
+#### `(loaded)`
+
+`ng2-img-fallback` provides `(loaded)` event which is fired when either `src` or `src-fallback` is loaded.
+To determinate whether original source or fallback is loaded - add a param to your callback for the `(loaded)` event.
+ 
+Example:
+
+First add callback to your component
+
+```ts
+onLoaded(isFallback: boolean) {
+  // make somthing based on 'isFallback'
+}
+```
+and then bind it to the `loaded` event
+
+```html
+<img src="picture1.png" src-fallback="picture2.png" (loaded)="onLoaded($event)"> 
+```
 
 ### License
 
