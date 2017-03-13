@@ -52,6 +52,28 @@ export class AppComponent {
 
 See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
+### Callbacks
+
+#### `(loaded)`
+
+`ng2-img-fallback` provides `(loaded)` event which is fired when either `src` or `src-fallback` is loaded.
+To determinate whether original source or fallback is loaded - add a param to your callback for the `(loaded)` event.
+ 
+Example:
+
+First add callback to your component
+
+```ts
+onLoaded(isFallback: boolean) {
+  // make somthing based on 'isFallback'
+}
+```
+and then bind it to the `loaded` event
+
+```html
+<img src="picture1.png" src-fallback="picture2.png" (loaded)="onLoaded($event)"> 
+```
+
 ### License
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
