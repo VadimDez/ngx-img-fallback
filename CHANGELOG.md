@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3
+* [[#14](https://github.com/VadimDez/ng2-img-fallback/issues/14)] - Angular 4
+
 ## 0.2.2
 * [[#11](https://github.com/VadimDez/ng2-img-fallback/issues/11)] - Added `(loaded)` event
 
