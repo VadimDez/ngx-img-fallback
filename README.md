@@ -1,8 +1,8 @@
-# Angular2 Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
+# Angular2+ Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
 
 > Load placeholder image on image error
 
-Angular 2 directive that loads placeholder image on primary image error.
+Angular 2+ directive that loads placeholder image on primary image error.
 
 [Demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
