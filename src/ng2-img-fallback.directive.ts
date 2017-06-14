@@ -3,7 +3,7 @@ import { Directive, ElementRef, Input, Output, EventEmitter } from '@angular/cor
 @Directive({
   selector: '[src-fallback]'
 })
-export class Ng2ImgFallbackDirective {
+export class ImgFallbackDirective {
 
   @Input('src-fallback') imgSrc: string;
   @Output('loaded') loaded: EventEmitter<boolean> = new EventEmitter<boolean>();

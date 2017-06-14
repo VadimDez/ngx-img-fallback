@@ -2,11 +2,11 @@
  * Created by vadimdez on 27/11/2016.
  */
 import { NgModule } from '@angular/core';
-import { Ng2ImgFallbackDirective } from './ng2-img-fallback.directive';
+import { ImgFallbackDirective } from './ng2-img-fallback.directive';
 
 @NgModule({
-  declarations: [Ng2ImgFallbackDirective],
-  exports: [Ng2ImgFallbackDirective]
+  declarations: [ImgFallbackDirective],
+  exports: [ImgFallbackDirective]
 })
 
-export class Ng2ImgFallbackModule {}
+export class ImgFallbackModule {}

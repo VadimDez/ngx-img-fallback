@@ -5,7 +5,7 @@ import {
 } from '@angular/core/testing';
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { provide, Component } from '@angular/core';
-import { Ng2ImgFallback } from './ng2-img-fallback.directive';
+import { ImgFallback } from './ng2-img-fallback.directive';
 
 @Component({
   selector: 'test-component',
