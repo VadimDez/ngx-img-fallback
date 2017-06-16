@@ -1,7 +1,7 @@
 {
-  "name": "ng2-img-fallback",
-  "version": "0.2.3",
-  "description": "Angular2 directive for image fallback",
+  "name": "ngx-img-fallback",
+  "version": "1.0.0",
+  "description": "Angular4+ directive for image fallback",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "directories": {
@@ -16,11 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://vadimdez@github.com/VadimDez/ng2-img-fallback.git"
+    "url": "git+https://vadimdez@github.com/VadimDez/ngx-img-fallback.git"
   },
   "keywords": [
     "angular",
     "angular2",
+    "angular4",
+    "angular4+",
     "img",
     "image",
     "fallback",
@@ -29,9 +31,9 @@
   "author": "Vadym Yatsyuk <vadym.yatsyuk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VadimDez/ng2-img-fallback/issues"
+    "url": "https://github.com/VadimDez/ngx-img-fallback/issues"
   },
-  "homepage": "https://github.com/VadimDez/ng2-img-fallback#readme",
+  "homepage": "https://github.com/VadimDez/ngx-img-fallback#readme",
   "peerDependencies": {
     "@angular/core": ">=2.0.0"
   },
