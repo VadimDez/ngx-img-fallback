@@ -28,7 +28,10 @@ import { ImgFallbackModule } from 'ngx-img-fallback';
  
 
 @NgModule({
-  imports: [BrowserModule, ImgFallbackModule],
+  imports: [
+    BrowserModule, 
+    ImgFallbackModule
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
