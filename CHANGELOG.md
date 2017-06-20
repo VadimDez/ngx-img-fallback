@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.0
+* [[#15](https://github.com/VadimDez/ngx-img-fallback/issues/15)] - Rename project
+
 ## 0.2.3
 * [[#14](https://github.com/VadimDez/ng2-img-fallback/issues/14)] - Angular 4
 

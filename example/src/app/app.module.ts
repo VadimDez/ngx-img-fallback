@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { Ng2ImgFallbackModule } from 'ng2-img-fallback';
+import { ImgFallbackModule } from 'ng2-img-fallback';
 
 import { AppComponent } from './app.component';
 
@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    Ng2ImgFallbackModule
+    ImgFallbackModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,19 +2,19 @@
 
 > Load placeholder image on image error
 
-Angular 2+ directive that loads placeholder image on primary image error.
+Angular 4+ directive that loads placeholder image on primary image error.
 
-[Demo page](https://vadimdez.github.io/ng2-img-fallback/)
+[Demo page](https://vadimdez.github.io/ngx-img-fallback/)
 
 ### Install
 
 ```
-npm install  ng2-img-fallback --save
+npm install  ngx-img-fallback --save
 ```
 
 ### Usage
 
-In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ng2-img-fallback/blob/master/SYSTEMJS.md)
+In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ngx-img-fallback/blob/master/SYSTEMJS.md)
 
 
 Add module to your module's ```imports```
@@ -24,11 +24,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app';
  
-import { Ng2ImgFallbackModule } from 'ng2-img-fallback';
+import { ImgFallbackModule } from 'ngx-img-fallback';
  
 
 @NgModule({
-  imports: [BrowserModule, Ng2ImgFallbackModule],
+  imports: [
+    BrowserModule, 
+    ImgFallbackModule
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
@@ -50,13 +53,13 @@ export class AppComponent {
 
 ```
 
-See also [example](https://github.com/VadimDez/ng2-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
+See also [example](https://github.com/VadimDez/ngx-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
 
 ### Events
 
 #### `(loaded)`
 
-`ng2-img-fallback` provides `(loaded)` event which is fired when either `src` or `src-fallback` is loaded.
+`ngx-img-fallback` provides `(loaded)` event which is fired when either `src` or `src-fallback` is loaded.
 To determinate whether original source or fallback is loaded - add a param to your callback for the `(loaded)` event.
  
 Example:

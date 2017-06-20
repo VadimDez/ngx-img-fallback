@@ -10,6 +10,7 @@
     "moduleResolution": "node",
     "rootDir": ".",
     "outDir": "./dist/",
+    "lib": ["es2017", "dom"],
     "typeRoots": [
       "node_modules/@types",
       "node_modules"
@@ -30,6 +31,7 @@
     "node_modules",
     "dist",
     "example",
+    "examples",
     "typings",
     "aot"
   ],
