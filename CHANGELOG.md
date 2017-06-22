@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.1.0
+* Generate UMD bundle
+
+### Breaking changes
+
+*This breaking change only valid for `SYSTEMJS` approach,*
+
+
+Now you have to do this in you `system.config.js` file:
+
+
+Replace in your ```packages```
+
+```js
+var packages = {
+    ...
+    'ngx-img-fallback': { main: 'dist/bundles/ngx-img-fallback.umd.js' }
+}
+```
+
+
 ## 1.0.0
 * [[#15](https://github.com/VadimDez/ngx-img-fallback/issues/15)] - Rename project
 
