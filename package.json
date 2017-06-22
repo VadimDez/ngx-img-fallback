@@ -2,7 +2,8 @@
   "name": "ngx-img-fallback",
   "version": "1.0.0",
   "description": "Angular4+ directive for image fallback",
-  "main": "dist/index.js",
+  "main": "dist/bundles/ngx-img-fallback.umd.js",
+  "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "directories": {
     "example": "example"
@@ -12,7 +13,7 @@
     "typings": "typings install",
     "all": "concurrently \"tsc -w \" \"tsc -p runtime -w \" \"npm run lite\" ",
     "watch": "tsc -w ",
-    "build": "ngc -p tsconfig.json"
+    "build": "rimraf dist && tsc -p tsconfig-esm.json && mkdir ./dist/bundles && rollup -c rollup.config.js dist/index.js > dist/bundles/ngx-img-fallback.umd.js && ngc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -64,6 +65,9 @@
     "lite-server": "^2.3.0",
     "protractor": "^5.1.2",
     "reflect-metadata": "0.1.10",
+    "rollup": "^0.43.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "rxjs": "^5.4.1",
     "systemjs": "0.20.14",
     "ts-node": "^3.0.6",
