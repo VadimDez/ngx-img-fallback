@@ -1,4 +1,4 @@
-# Angular2+ Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
+# Angular2+ Image Fallback ![https://www.npmjs.com/package/ng2-img-fallback](https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat) ![https://www.npmjs.com/package/ngx-img-fallback](https://img.shields.io/npm/dm/ngx-img-fallback.svg?style=flat) [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
 
 > Load placeholder image on image error
 
