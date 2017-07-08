@@ -1,4 +1,4 @@
-# Angular2+ Image Fallback [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ng2-img-fallback.svg)
+# Angular2+ Image Fallback [![npm version](https://badge.fury.io/js/ngx-img-fallback.svg)](https://badge.fury.io/js/ng2-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ngx-img-fallback.svg)
 
 > Load placeholder image on image error
 
@@ -53,7 +53,7 @@ export class AppComponent {
 
 ```
 
-See also [example](https://github.com/VadimDez/ngx-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ng2-img-fallback/)
+See also [example](https://github.com/VadimDez/ngx-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ngx-img-fallback/)
 
 ### Events
 
