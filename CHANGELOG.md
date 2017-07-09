@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.1
+## 1.1.2
 * [[#13](https://github.com/VadimDez/ngx-img-fallback/issues/13)] - Fallback image not loaded when the dynamic image source changed
 
 ## 1.1.0
