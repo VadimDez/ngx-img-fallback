@@ -6,7 +6,7 @@
     </p>
 
     <p>
-      For further information see <a href="https://github.com/VadimDez/ng2-img-fallback">github page</a>.
+      For further information see <a href="https://github.com/VadimDez/ngx-img-fallback">github page</a>.
     </p>
   </div>
   <div>
@@ -25,7 +25,7 @@
 
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col">
-        <img src="not-working_image" alt="not working image with not working fallback" src-fallback="{{ brokenPlaceholder }}">
+        <img src="not-working_image" alt="not working image with not working fallback" [src-fallback]="brokenPlaceholder">
       </div>
       <div class="mdl-cell mdl-cell--9-col">
         &lt;img src=&quot;not-working_image&quot; alt=&quot;not working image with not working fallback&quot; src-fallback=&quot;{{ brokenPlaceholder }}&quot;&gt;
@@ -37,10 +37,10 @@
 
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col">
-        <img src="not-working_image" alt="not working image with wirking fallback" src-fallback="{{ workingPlaceholder }}" (loaded)="onLoad($event)">
+        <img src="not-working-image" alt="not working image with wirking fallback" [src-fallback]="workingPlaceholder" (loaded)="onLoad($event)">
       </div>
       <div class="mdl-cell mdl-cell--9-col">
-        &lt;img src=&quot;not-working_image&quot; alt=&quot;not working image with wirking fallback&quot; src-fallback=&quot;{{ workingPlaceholder }}&quot; (loaded)=&quot;onLoad($event)&quot;&gt;
+        &lt;img src=&quot;not-working_image&quot; alt=&quot;not working image with working fallback&quot; src-fallback=&quot;{{ workingPlaceholder }}&quot; (loaded)=&quot;onLoad($event)&quot;&gt;
       </div>
     </div>
   </div>
