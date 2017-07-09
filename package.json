@@ -1,6 +1,6 @@
 {
   "name": "ngx-img-fallback",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Angular4+ directive for image fallback",
   "main": "dist/bundles/ngx-img-fallback.umd.js",
   "module": "dist/index.js",
