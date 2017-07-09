@@ -13,7 +13,8 @@
     "typings": "typings install",
     "all": "concurrently \"tsc -w \" \"tsc -p runtime -w \" \"npm run lite\" ",
     "watch": "tsc -w ",
-    "build": "rimraf dist && tsc -p tsconfig-esm.json && mkdir ./dist/bundles && rollup -c rollup.config.js dist/index.js > dist/bundles/ngx-img-fallback.umd.js && ngc -p tsconfig.json"
+    "build": "rimraf dist && tsc -p tsconfig-esm.json && mkdir ./dist/bundles && rollup -c rollup.config.js dist/index.js > dist/bundles/ngx-img-fallback.umd.js && ngc -p tsconfig.json",
+    "replace": "npm run build && cp -R ./dist ./examples/ng-cli/node_modules/ngx-img-fallback/"
   },
   "repository": {
     "type": "git",
