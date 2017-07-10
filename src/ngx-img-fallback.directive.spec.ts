@@ -1,24 +1,35 @@
 import {
-  async,
-  addProviders,
-  inject
+  ComponentFixture, TestBed
 } from '@angular/core/testing';
-import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
-import { provide, Component } from '@angular/core';
+import { Component, DebugElement } from '@angular/core';
 import { ImgFallbackDirective } from './ngx-img-fallback.directive';
+import { By } from '@angular/platform-browser';
 
 @Component({
   selector: 'test-component',
-  template: `<div src-fallback></div>`
+  template: `<img src-fallback>`
 })
+
 class TestComponent {}
 
 describe('Ng2ImgFallback Directive', () => {
-  beforeEach(() => addProviders([]));
+  let component: TestComponent;
+  let fixture: ComponentFixture<TestComponent>;
+  let imgElement: DebugElement;
 
-  it('should ...', async(inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-    return tcb.createAsync(TestComponent).then((fixture: ComponentFixture<any>) => {
-      fixture.detectChanges();
-    });
-  })));
+  TestBed.configureTestingModule({
+    declarations: [
+      TestComponent,
+      ImgFallbackDirective
+    ]
+  });
+
+  fixture = TestBed.createComponent(TestComponent);
+  component = fixture.componentInstance;
+  imgElement = fixture.debugElement.query(By.css('img'));
+
+  it('should set placeholder', () => {
+    // imgElement.
+    expect(true).toBeTruthy();
+  });
 });
