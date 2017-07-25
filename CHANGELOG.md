@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.3
+* [[18](https://github.com/VadimDez/ngx-img-fallback/issues/18)] - Wrong contents for 1.1.2 in npm
+
 ## 1.1.2
 * [[#13](https://github.com/VadimDez/ngx-img-fallback/issues/13)] - Fallback image not loaded when the dynamic image source changed
 
