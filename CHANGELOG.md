@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.0
+* [[19](https://github.com/VadimDez/ngx-img-fallback/issues/19)] - Support server side rendering
+
 ## 1.1.3
 * [[18](https://github.com/VadimDez/ngx-img-fallback/issues/18)] - Wrong contents for 1.1.2 in npm
 
