@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { Directive, ElementRef, Input, Output, EventEmitter, OnDestroy, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[src-fallback]'
@@ -7,13 +7,15 @@ export class ImgFallbackDirective implements OnDestroy {
 
   @Input('src-fallback') imgSrc: string;
   @Output('loaded') loaded = new EventEmitter<boolean>();
-  private el: HTMLElement;
+  private nativeElement: HTMLElement;
   private isApplied: boolean = false;
   private ERROR_EVENT_TYPE: string = 'error';
   private LOAD_EVENT_TYPE: string = 'load';
+  private cancelOnError: Function;
+  private cancelOnLoad: Function;
 
-  constructor(el: ElementRef) {
-    this.el = el.nativeElement;
+  constructor(private el: ElementRef, private renderer: Renderer2) {
+    this.nativeElement = el.nativeElement;
 
     this.onError = this.onError.bind(this);
     this.onLoad = this.onLoad.bind(this);
@@ -26,9 +28,9 @@ export class ImgFallbackDirective implements OnDestroy {
   }
 
   private onError() {
-    if (this.el.getAttribute('src') !== this.imgSrc) {
+    if (this.nativeElement.getAttribute('src') !== this.imgSrc) {
       this.isApplied = true;
-      this.el.setAttribute('src', this.imgSrc);
+      this.renderer.setAttribute(this.nativeElement, 'src', this.imgSrc);
     }
 
     this.removeOnLoadEvent();
@@ -39,15 +41,19 @@ export class ImgFallbackDirective implements OnDestroy {
   }
 
   private removeErrorEvent() {
-    this.el.removeEventListener(this.ERROR_EVENT_TYPE, this.onError);
+    if (this.cancelOnError) {
+      this.cancelOnError();
+    }
   }
 
   private removeOnLoadEvent() {
-    this.el.removeEventListener(this.LOAD_EVENT_TYPE, this.onLoad);
+    if (this.cancelOnLoad) {
+      this.cancelOnLoad();
+    }
   }
 
   private addEvents() {
-    this.el.addEventListener(this.ERROR_EVENT_TYPE, this.onError);
-    this.el.addEventListener(this.LOAD_EVENT_TYPE, this.onLoad);
+    this.cancelOnError = this.renderer.listen(this.nativeElement, this.ERROR_EVENT_TYPE, this.onError);
+    this.cancelOnLoad = this.renderer.listen(this.nativeElement, this.LOAD_EVENT_TYPE, this.onLoad);
   }
 }
