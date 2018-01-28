@@ -1,3 +1,6 @@
+/**
+ * Created by vadimdez on 28/01/2018.
+ */
 import { Directive, ElementRef, Input, Output, EventEmitter, OnDestroy, Renderer2 } from '@angular/core';
 
 @Directive({
