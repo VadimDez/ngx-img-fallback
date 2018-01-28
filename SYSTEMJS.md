@@ -7,7 +7,7 @@ Add to ```map```
 ```js
 var map = {
     ...
-    'ngx-img-fallback': 'node_modules/ngx-img-fallback'
+    'ngx-img-fallback': 'node_modules/ngx-img-fallback/bundles'
 }
 ```
 
@@ -16,6 +16,6 @@ and then to ```packages```
 ```js
 var packages = {
     ...
-    'ngx-img-fallback': { main: 'dist/bundles/ngx-img-fallback.umd.js' }
+    'ngx-img-fallback': { defaultExtension: 'js' }
 }
 ```
