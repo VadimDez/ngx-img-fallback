@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+* [[#23](https://github.com/VadimDez/ngx-img-fallback/pull/23)] - Restructure
+
+#### Breaking change
+Distribute now generates different files. Use `bundles/ngx-img-fallback.umd.js` or its minified version `bundles/ngx-img-fallback.umd.min.js`.
+
 ## 1.2.0
 * [[19](https://github.com/VadimDez/ngx-img-fallback/issues/19)] - Support server side rendering
 
