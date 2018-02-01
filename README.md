@@ -1,8 +1,8 @@
-# Angular2+ Image Fallback ![https://www.npmjs.com/package/ng2-img-fallback](https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat) ![https://www.npmjs.com/package/ngx-img-fallback](https://img.shields.io/npm/dm/ngx-img-fallback.svg?style=flat) [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ngx-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ngx-img-fallback.svg)
+# Angular 5+ Image Fallback ![https://www.npmjs.com/package/ng2-img-fallback](https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat) ![https://www.npmjs.com/package/ngx-img-fallback](https://img.shields.io/npm/dm/ngx-img-fallback.svg?style=flat) [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ngx-img-fallback)  ![Dependencies](https://david-dm.org/vadimdez/ngx-img-fallback.svg)
 
 > Load placeholder image on image error
 
-Angular 4+ directive that loads placeholder image on primary image error.
+Angular 5+ directive that loads placeholder image on primary image error.
 
 [Demo page](https://vadimdez.github.io/ngx-img-fallback/)
 
