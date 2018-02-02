@@ -1,7 +1,7 @@
 {
   "name": "ngx-img-fallback",
-  "version": "1.3.0",
-  "description": "Angular4+ directive for image fallback",
+  "version": "1.3.1",
+  "description": "Angular5+ directive for image fallback",
   "main": "index.js",
   "scripts": {
     "ng": "ng",
@@ -19,8 +19,8 @@
   "keywords": [
     "angular",
     "angular2",
-    "angular4",
-    "angular4+",
+    "angular5",
+    "angular5+",
     "img",
     "image",
     "fallback",
