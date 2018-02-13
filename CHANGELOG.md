@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.2
+Updated packagr
+
 ## 1.3.1
 * [[#24](https://github.com/VadimDez/ngx-img-fallback/issues/24)] - Error: Please add a @NgModule annotation in 1.3.0
 
