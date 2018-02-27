@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.3
+* [[#25](https://github.com/VadimDez/ngx-img-fallback/issues/25)] - loaded event does not fire on fallback
+* [[#26](https://github.com/VadimDez/ngx-img-fallback/pull/26)] - onLoad to be called when the fallback image is used
+
 ## 1.3.2
 Updated packagr
 
