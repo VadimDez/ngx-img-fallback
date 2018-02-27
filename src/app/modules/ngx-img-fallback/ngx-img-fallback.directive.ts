@@ -34,9 +34,9 @@ export class ImgFallbackDirective implements OnDestroy {
     if (this.nativeElement.getAttribute('src') !== this.imgSrc) {
       this.isApplied = true;
       this.renderer.setAttribute(this.nativeElement, 'src', this.imgSrc);
+    } else {
+      this.removeOnLoadEvent();
     }
-
-    this.removeOnLoadEvent();
   }
 
   private onLoad() {
