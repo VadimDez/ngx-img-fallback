@@ -22,7 +22,7 @@ In case you're using ```SystemJS``` see configuration [here](https://github.com/
 
 Add module to your module's ```imports```
 
-```ts
+```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app';
@@ -69,7 +69,7 @@ Example:
 
 First add callback to your component
 
-```ts
+```typescript
 onLoaded(isFallback: boolean) {
   // make somthing based on 'isFallback'
 }
