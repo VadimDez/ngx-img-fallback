@@ -43,7 +43,7 @@ export class AppModule {}
 
 Use it in you component
 
-```ts
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
