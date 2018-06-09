@@ -5,7 +5,13 @@
 
 Angular 5+ directive that loads placeholder image on primary image error.
 
+### Demo
+
 [Demo page](https://vadimdez.github.io/ngx-img-fallback/)
+
+or code demo
+
+[https://stackblitz.com/edit/ngx-img-fallback](https://stackblitz.com/edit/ngx-img-fallback)
 
 ### Install
 
