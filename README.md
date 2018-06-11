@@ -23,7 +23,7 @@ npm install  ngx-img-fallback --save
 
 ### Usage
 
-In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ngx-img-fallback/blob/master/SYSTEMJS.md)
+*In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ngx-img-fallback/blob/master/SYSTEMJS.md)*
 
 
 Add module to your module's ```imports```
