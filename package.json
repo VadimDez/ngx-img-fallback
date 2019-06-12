@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p package.json"
   },
   "private": false,
   "repository": {
@@ -69,5 +69,11 @@
     "typescript": "~3.4.3",
     "core-js": "^2.4.1",
     "ng-packagr": "^5.3.0"
+  },
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
   }
 }
