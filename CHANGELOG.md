@@ -1,7 +1,7 @@
 # Changelog
 
 ## 1.3.4
-* [[#27](https://github.com/VadimDez/ngx-img-fallback/issues/27)] - Upgrade Angular
+* [[#27](https://github.com/VadimDez/ngx-img-fallback/issues/27)] - Upgrade Angular to version 8
 
 ## 1.3.3
 * [[#25](https://github.com/VadimDez/ngx-img-fallback/issues/25)] - loaded event does not fire on fallback
