@@ -68,7 +68,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~8.5.0",
     "tslint": "~5.20.1",
-    "typescript": "~3.7.2",
+    "typescript": "~3.5.3",
     "core-js": "^3.4.0",
     "ng-packagr": "^5.3.0"
   },
