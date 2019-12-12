@@ -69,7 +69,7 @@
     "ts-node": "~8.5.0",
     "tslint": "~5.20.1",
     "typescript": "~3.5.3",
-    "core-js": "^3.4.0",
+    "core-js": "^3.5.0",
     "ng-packagr": "^5.3.0"
   },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
