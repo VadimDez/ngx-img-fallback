@@ -54,15 +54,15 @@
     "@angular/cli": "~9.0.0",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
-    "@types/node": "~13.5.1",
+    "@types/node": "~13.13.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.4.1",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.0",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
@@ -70,7 +70,7 @@
     "tslint": "~5.20.1",
     "typescript": "~3.5.3",
     "core-js": "^3.6.1",
-    "ng-packagr": "^5.3.0"
+    "ng-packagr": "^9.0.0"
   },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
