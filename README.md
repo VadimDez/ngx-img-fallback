@@ -6,10 +6,6 @@
   </a>
   
   <a href="https://www.npmjs.com/package/ng2-img-fallback">
-    <img src="https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat" alt="downloads">
-  </a>
-  
-  <a href="https://www.npmjs.com/package/ng2-img-fallback">
     <img src="https://badge.fury.io/js/ng2-img-fallback.svg" alt="downloads">
   </a>
   
