@@ -71,7 +71,7 @@
     "tslint": "~5.20.1",
     "typescript": "~3.5.3",
     "core-js": "^3.6.1",
-    "ng-packagr": "^9.0.0"
+    "ng-packagr": "^10.1.1"
   },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
