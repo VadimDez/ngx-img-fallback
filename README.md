@@ -1,5 +1,22 @@
-# Angular 5+ Image Fallback
-![https://www.npmjs.com/package/ngx-img-fallback](https://img.shields.io/npm/dm/ngx-img-fallback.svg?style=flat) ![https://www.npmjs.com/package/ng2-img-fallback](https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat) [![npm version](https://badge.fury.io/js/ng2-img-fallback.svg)](https://badge.fury.io/js/ngx-img-fallback)   ![Dependencies](https://david-dm.org/vadimdez/ngx-img-fallback.svg) ![https://www.paypal.me/vadimdez](https://img.shields.io/badge/paypal-donate-yellow.svg)
+<h1 align="center">Angular 5+ Image Fallback</h1>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/ngx-img-fallback">
+    <img src="https://img.shields.io/npm/dm/ngx-img-fallback.svg?style=flat" alt="downloads">
+  </a>
+  
+  <a href="https://www.npmjs.com/package/ng2-img-fallback">
+    <img src="https://img.shields.io/npm/dm/ng2-img-fallback.svg?style=flat" alt="downloads">
+  </a>
+  
+  <a href="https://www.npmjs.com/package/ng2-img-fallback">
+    <img src="https://badge.fury.io/js/ng2-img-fallback.svg" alt="downloads">
+  </a>
+  
+  <a href="https://www.paypal.me/vadimdez">
+    <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="downloads">
+  </a>
+</p>
 
 > Load placeholder image on image error
 
