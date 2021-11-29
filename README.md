@@ -18,15 +18,15 @@
 
 Angular 5+ directive that loads placeholder image on primary image error.
 
-### Demo
+### Demo page
 
 [Demo page](https://vadimdez.github.io/ngx-img-fallback/)
 
-or code demo
+### Stackblitz Example
 
 [https://stackblitz.com/edit/ngx-img-fallback](https://stackblitz.com/edit/ngx-img-fallback)
 
-### Install
+## Install
 
 ```
 npm install  ngx-img-fallback --save
@@ -34,7 +34,7 @@ npm install  ngx-img-fallback --save
 
 *For Angular 2+ use version `1.2.0`*
 
-### Usage
+## Usage
 
 *In case you're using ```SystemJS``` see configuration [here](https://github.com/VadimDez/ngx-img-fallback/blob/master/SYSTEMJS.md)*
 
@@ -77,7 +77,7 @@ export class AppComponent {
 
 See also [example](https://github.com/VadimDez/ngx-img-fallback/tree/master/example) or [demo page](https://vadimdez.github.io/ngx-img-fallback/)
 
-### Events
+## Events
 
 #### `(loaded)`
 
@@ -99,6 +99,6 @@ and then bind it to the `loaded` event
 <img src="picture1.png" src-fallback="picture2.png" (loaded)="onLoaded($event)"> 
 ```
 
-### License
+## License
 
 [MIT](https://tldrlegal.com/license/mit-license) © [Vadym Yatsyuk](https://github.com/vadimdez)
