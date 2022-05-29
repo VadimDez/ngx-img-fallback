@@ -8,14 +8,14 @@ import { Directive, ElementRef, Input, Output, EventEmitter, OnDestroy, Renderer
 })
 export class ImgFallbackDirective implements OnDestroy {
 
-  @Input('src-fallback') imgSrc: string;
+  @Input('src-fallback') imgSrc!: string;
   @Output('loaded') loaded = new EventEmitter<boolean>();
   private nativeElement: HTMLElement;
   private isApplied: boolean = false;
   private ERROR_EVENT_TYPE: string = 'error';
   private LOAD_EVENT_TYPE: string = 'load';
-  private cancelOnError: Function;
-  private cancelOnLoad: Function;
+  private cancelOnError!: Function;
+  private cancelOnLoad!: Function;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.nativeElement = el.nativeElement;
