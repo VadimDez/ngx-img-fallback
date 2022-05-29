@@ -5,14 +5,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "ng test --watch false",
     "test:w": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCI",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p package.json",
-    "docs": "ng build --prod --output-path docs --base-href ngx-img-fallback && cp ./docs/index.html ./docs/404.html"
+    "packagr": "ng-packagr -p ng-package.json",
+    "docs": "ng build --output-path docs --base-href ngx-img-fallback && cp ./docs/index.html ./docs/404.html",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": false,
   "repository": {
@@ -35,48 +37,31 @@
     "url": "https://github.com/VadimDez/ngx-img-fallback/issues"
   },
   "homepage": "https://github.com/VadimDez/ngx-img-fallback#readme",
-  "peerDependencies": {
-    "@angular/core": ">=5.0.0"
-  },
-  "dependencies": {},
   "devDependencies": {
-    "@angular/animations": "~8.2.13",
-    "@angular/common": "~8.2.13",
-    "@angular/compiler": "~8.2.13",
-    "@angular/core": "~8.2.13",
-    "@angular/forms": "~8.2.13",
-    "@angular/platform-browser": "~8.2.13",
-    "@angular/platform-browser-dynamic": "~8.2.13",
-    "@angular/router": "~8.2.13",
-    "rxjs": "~6.5.3",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.10.2",
-    "@angular-devkit/build-angular": "~0.803.18",
-    "@angular/cli": "~8.3.18",
-    "@angular/compiler-cli": "~8.2.13",
-    "@angular/language-service": "~8.2.13",
-    "@types/node": "~13.13.0",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "^5.0.0",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
+    "@angular-devkit/build-angular": "~13.3.7",
+    "@angular/animations": "~13.3.0",
+    "@angular/cli": "~13.3.7",
+    "@angular/common": "~13.3.0",
+    "@angular/compiler": "~13.3.0",
+    "@angular/compiler-cli": "~13.3.0",
+    "@angular/core": "~13.3.0",
+    "@angular/forms": "~13.3.0",
+    "@angular/platform-browser": "~13.3.0",
+    "@angular/platform-browser-dynamic": "~13.3.0",
+    "@cypress/schematic": "^1.7.0",
+    "@types/jasmine": "~3.10.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~4.0.0",
+    "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.0",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.0",
-    "protractor": "~5.4.0",
-    "ts-node": "~8.6.2",
-    "tslint": "~5.20.1",
-    "typescript": "~3.5.3",
-    "core-js": "^3.6.1",
-    "ng-packagr": "^9.0.0"
-  },
-  "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    }
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "~13.3.1",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "typescript": "~4.6.2",
+    "zone.js": "~0.11.4",
+    "cypress": "latest"
   }
 }
