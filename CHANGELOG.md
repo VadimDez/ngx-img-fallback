@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0
+
+- [[#83](https://github.com/VadimDez/ngx-img-fallback/issues/83)] - Upgrade project to angular 13
+- [[#84](https://github.com/VadimDez/ngx-img-fallback/pull/84)] - Upgrade to angular 13
+
 ## 1.3.4
 
 - [[#27](https://github.com/VadimDez/ngx-img-fallback/issues/27)] - Upgrade Angular to version 8
