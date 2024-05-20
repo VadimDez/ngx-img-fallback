@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0
+
+- [[#99](https://github.com/VadimDez/ngx-img-fallback/pull/99)] - Update project to Angular 17
+- [[#96](https://github.com/VadimDez/ngx-img-fallback/issues/96)] - Upgrade project to angular 16
+
 ## 2.0.0
 
 - [[#83](https://github.com/VadimDez/ngx-img-fallback/issues/83)] - Upgrade project to angular 13
