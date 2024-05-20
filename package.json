@@ -5,14 +5,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
     "test": "ng test --watch false",
     "test:w": "ng test",
     "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
-    "docs": "ng build --output-path docs --base-href ngx-img-fallback && cp ./docs/index.html ./docs/404.html",
+    "docs": "ng build --configuration production --output-path docs --base-href ngx-img-fallback && cp -R ./docs/browser/* ./docs/ && rm -rf ./docs/browser && cp ./docs/index.html ./docs/404.html",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },
